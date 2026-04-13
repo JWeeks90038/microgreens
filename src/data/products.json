@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Sunflower Shoots",
+    "price": 6.99,
+    "shortDescription": "Nutty, crunchy microgreens perfect for salads and sandwiches.",
+    "description": "Our sunflower shoots offer a delightful nutty flavor with a satisfying crunch. These nutrient-dense microgreens are packed with protein, healthy fats, and essential vitamins. Perfect for adding texture and flavor to salads, sandwiches, wraps, and smoothie bowls.",
+    "flavorProfile": "Nutty, mild, crunchy",
+    "nutritionalBenefits": "High in protein, vitamin E, folate, and healthy fats",
+    "bestUses": ["Salads", "Sandwiches", "Wraps", "Smoothie bowls", "Garnish"],
+    "image": "/images/sunflower-shoots.jpg",
+    "featured": true,
+    "category": "shoots"
+  },
+  {
+    "id": 2,
+    "name": "Pea Shoots",
+    "price": 7.49,
+    "shortDescription": "Sweet, tender shoots with a fresh pea flavor.",
+    "description": "Delicate pea shoots with a sweet, fresh taste reminiscent of spring peas. These tender microgreens are rich in vitamins A, C, and K, plus folate and fiber. Excellent for stir-fries, salads, or as a beautiful garnish for soups and main dishes.",
+    "flavorProfile": "Sweet, fresh, pea-like",
+    "nutritionalBenefits": "Rich in vitamins A, C, K, folate, and fiber",
+    "bestUses": ["Stir-fries", "Salads", "Soup garnish", "Asian dishes", "Raw consumption"],
+    "image": "/images/pea-shoots.jpg",
+    "featured": true,
+    "category": "shoots"
+  },
+  {
+    "id": 3,
+    "name": "Broccoli Microgreens",
+    "price": 8.99,
+    "shortDescription": "Intense broccoli flavor packed with sulforaphane.",
+    "description": "These vibrant broccoli microgreens deliver an intense, concentrated broccoli flavor with exceptional nutritional benefits. Particularly high in sulforaphane, a powerful antioxidant compound. Perfect for health-conscious consumers looking to boost their nutrient intake.",
+    "flavorProfile": "Intense broccoli, slightly bitter, earthy",
+    "nutritionalBenefits": "Extremely high in sulforaphane, vitamin C, and antioxidants",
+    "bestUses": ["Smoothies", "Salads", "Health shots", "Sandwiches", "Garnish"],
+    "image": "/images/broccoli-microgreens.jpg",
+    "featured": true,
+    "category": "brassicas"
+  },
+  {
+    "id": 4,
+    "name": "Radish Microgreens",
+    "price": 5.99,
+    "shortDescription": "Spicy, peppery kick with vibrant red stems.",
+    "description": "Add some heat to your dishes with our radish microgreens! These beautiful microgreens feature vibrant red stems and green leaves, delivering a spicy, peppery flavor that wakes up any meal. Rich in vitamin C and antioxidants.",
+    "flavorProfile": "Spicy, peppery, tangy",
+    "nutritionalBenefits": "High in vitamin C, antioxidants, and natural enzymes",
+    "bestUses": ["Salads", "Tacos", "Meat dishes", "Sandwiches", "Cocktail garnish"],
+    "image": "/images/radish-microgreens.jpg",
+    "featured": false,
+    "category": "brassicas"
+  },
+  {
+    "id": 5,
+    "name": "Arugula Microgreens",
+    "price": 7.99,
+    "shortDescription": "Peppery, sophisticated flavor for gourmet dishes.",
+    "description": "These delicate arugula microgreens pack the same peppery punch as mature arugula but with a more refined, less bitter taste. Perfect for upscale dining and gourmet preparations. Rich in calcium, iron, and vitamin K.",
+    "flavorProfile": "Peppery, sophisticated, slightly nutty",
+    "nutritionalBenefits": "High in calcium, iron, vitamin K, and nitrates",
+    "bestUses": ["Fine dining", "Pizza", "Pasta", "Cheese plates", "Upscale salads"],
+    "image": "/images/arugula-microgreens.jpg",
+    "featured": false,
+    "category": "leafy"
+  },
+  {
+    "id": 6,
+    "name": "Mizuna Microgreens",
+    "price": 6.49,
+    "shortDescription": "Mild mustard flavor with feathery, delicate leaves.",
+    "description": "Beautiful mizuna microgreens with distinctive feathery leaves and a mild mustard flavor. These Asian greens offer a unique texture and subtle spice that complements both Eastern and Western cuisines. Packed with vitamins and minerals.",
+    "flavorProfile": "Mild mustard, slightly peppery, delicate",
+    "nutritionalBenefits": "Rich in vitamins A, C, and calcium",
+    "bestUses": ["Asian cuisine", "Salad mix", "Sushi garnish", "Soup topping", "Stir-fries"],
+    "image": "/images/mizuna-microgreens.jpg",
+    "featured": true,
+    "category": "asian"
+  }
+]
