@@ -39,10 +39,10 @@ export default function Navbar() {
             <span className="font-light opacity-60"
                   style={{ 
                     color: 'rgb(var(--color-primary-700))',
-                    fontSize: '7px',
+                    fontSize: '9px',
                     lineHeight: '1'
                   }}>
-              A microgreens company
+              Eat small. Live strong. Thrive daily
             </span>
           </Link>
 

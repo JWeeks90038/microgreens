@@ -134,7 +134,7 @@ export default function Features() {
               className="text-lg mb-8 max-w-2xl mx-auto"
               style={{ color: 'rgb(var(--color-sage-700))' }}
             >
-              Join hundreds of chefs and health enthusiasts who trust Thriving Greens 
+              Join local chefs and health enthusiasts who trust Thriving Greens 
               for their daily dose of premium <span className="font-semibold" style={{ color: 'rgb(var(--color-primary-600))' }}>microgreens</span>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

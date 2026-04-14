@@ -32,7 +32,7 @@ export default function Hero() {
       </div>
 
       {/* Title Above Video */}
-      <div className="relative text-center pt-16 pb-8">
+      <div className="relative text-center pt-6 pb-4">
         <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-tight"
             style={{ color: 'rgb(var(--color-primary-800))' }}>
           Thriving <span style={{ color: 'rgb(var(--color-primary-600))' }}>Greens</span>
@@ -62,16 +62,16 @@ export default function Hero() {
       </div>
 
       {/* Centered Content */}
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-20">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-20">
         <div className="text-center animate-fade-in">
-          <p className="text-xl md:text-2xl mb-8 leading-relaxed"
+          <p className="text-xl md:text-2xl mb-3 leading-relaxed"
              style={{ color: 'rgb(var(--color-sage-700))' }}>
             Fresh {highlightMicrogreens('microgreens')} grown locally, 
             <span className="block font-semibold" style={{ color: 'rgb(var(--color-primary-700))' }}>delivered daily</span>
           </p>
 
           <p className="text-lg text-sage-600 mb-10 max-w-4xl mx-auto">
-            Experience the pure taste of nutrient-dense {highlightMicrogreens('microgreens')}, 
+            Experience the pure taste of energy packed, nutrient-dense {highlightMicrogreens('microgreens')}, 
             carefully cultivated for chefs and health enthusiasts who demand the finest quality.
           </p>
 

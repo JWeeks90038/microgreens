@@ -33,7 +33,8 @@ export const businessInfo = {
   name: "Thriving Greens",
   email: "thrivinggreens.co@gmail.com",
   location: "Murrieta, California, USA",
-  instagram: "https://instagram.com/thrivinggreens.co",
+  instagram: "https://www.instagram.com/thrivinggreens.co/?hl=en",
+  facebook: "https://www.facebook.com/profile.php?id=61570673604333",
   phone: "(555) 123-4567"
 }
 
