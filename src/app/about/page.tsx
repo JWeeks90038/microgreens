@@ -139,19 +139,19 @@ export default function AboutPage() {
           </h2>
           <div className="prose prose-lg mx-auto text-sage-700">
             <p className="text-xl leading-relaxed mb-6">
-              Thriving Greens began with a simple belief: everyone deserves access to the freshest, 
-              most nutritious produce possible. What started as a small passion project has grown 
-              into a thriving urban farm dedicated to providing premium {highlightMicrogreens('microgreens')} to our community.
+              Thriving Greens started with a simple belief: our community deserves access to the freshest, 
+              most nutritious produce possible. As a new venture driven by passion and purpose, we're building 
+              an operation dedicated to providing premium {highlightMicrogreens('microgreens')} to health-conscious individuals and local businesses.
             </p>
             <p className="text-lg leading-relaxed mb-6">
-              We've spent years perfecting our growing techniques, working with local chefs, 
-              and learning from nutrition experts to create the perfect growing environment for 
-              each variety of microgreen we cultivate.
+              We're currently perfecting our growing techniques, building relationships with local chefs, 
+              and learning from nutrition experts to create the optimal growing environment for 
+              each variety of microgreen we cultivate. Every day brings new growth - both for our plants and our business.
             </p>
             <p className="text-lg leading-relaxed">
-              Today, we're proud to supply restaurants, health-conscious individuals, and 
-              families with {highlightMicrogreens('microgreens')} that are not just fresh, but harvested at the peak 
-              of their nutritional value and delivered within 24 hours.
+              As we grow, our commitment remains unwavering: to supply restaurants, health-conscious individuals, and 
+              families with {highlightMicrogreens('microgreens')} that are harvested at the peak 
+              of their nutritional value and delivered fresh within 24 hours.
             </p>
           </div>
         </div>
