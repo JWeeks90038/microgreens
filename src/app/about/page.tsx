@@ -94,57 +94,48 @@ export default function AboutPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-sage-50">
-      {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-sage-50 to-cream-100"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="font-display font-bold text-5xl md:text-6xl text-primary-800 leading-tight mb-6">
-                Our Growing
-                <span className="block text-primary-600">Process</span>
-              </h1>
-              <p className="text-xl text-sage-700 leading-relaxed mb-8">
-                From seed to harvest, we're committed to growing the most nutritious and 
-                flavorful microgreens through pure, natural, sustainable practices.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link 
-                  href="/shop"
-                  className="bg-primary-600 hover:bg-primary-700 text-white font-semibold px-8 py-3 rounded-full transition-colors duration-200 text-center"
-                >
-                  Shop Fresh <span className="font-semibold" style={{ color: 'rgb(var(--color-cream-100))', textShadow: '0 0 10px rgba(255, 255, 255, 0.3)' }}>Microgreens</span>
-                </Link>
-                <Link 
-                  href="/contact"
-                  className="text-primary-600 hover:text-primary-700 font-semibold px-8 py-3 text-center transition-colors duration-200"
-                >
-                  Visit Our Farm →
-                </Link>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="relative h-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-soft-lg">
-                <Image
-                  src="/images/farm-overview.jpg"
-                  alt="Thriving Greens farm overview"
-                  fill
-                  className="object-cover"
-                  priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </div>
-          </div>
+    <>
+      {/* Video Hero Section */}
+      <section className="relative overflow-hidden"
+               style={{ background: 'linear-gradient(135deg, rgb(var(--color-cream-100)), rgb(var(--color-sage-50)), rgb(var(--color-primary-50)))' }}>
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0 bg-repeat opacity-20" 
+               style={{backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2316a34a' fill-opacity='0.1'%3E%3Cpath d='m36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")"}} />
+        </div>
+
+        {/* Title Above Video */}
+        <div className="relative text-center pt-6 pb-4">
+          <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-tight"
+              style={{ color: 'rgb(var(--color-primary-800))' }}>
+            Our Growing <span style={{ color: 'rgb(var(--color-primary-600))' }}>Process</span>
+          </h1>
+        </div>
+
+        {/* Full Width Video */}
+        <div className="w-full">
+          <video 
+            className="w-full h-64 md:h-80 lg:h-96 object-cover"
+            autoPlay 
+            muted 
+            loop
+            playsInline
+            controls={false}
+            preload="auto"
+          >
+            <source src="/videos/cutting-microgreens-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
+
+      <div className="min-h-screen bg-sage-50">
 
       {/* Our Story Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display font-bold text-4xl md:text-5xl text-primary-800 mb-8">
-            Our Story
+            What drives us
           </h2>
           <div className="prose prose-lg mx-auto text-sage-700">
             <p className="text-xl leading-relaxed mb-6">
@@ -309,5 +300,6 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
+    </>
   )
 }

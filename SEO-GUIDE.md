@@ -92,7 +92,7 @@ return <SEOHead structuredData={[productSchema]} />
 - Business name: "Thriving Greens"
 - Category: "Indoor Farm" or "Produce Market"
 - Address: Murrieta, CA (specific address when available)
-- Phone: (555) 123-4567
+- Phone: (760) 271-1244
 - Website: https://thrivinggreens.com
 - Hours: Mo-Fr 08:00-17:00, Sa 08:00-14:00
 

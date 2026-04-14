@@ -82,7 +82,7 @@ export default function ContactPage() {
         </svg>
       ),
       title: "Farm Location",
-      content: "123 Green Valley Road, Farmville, State 12345",
+      content: "Murrieta, California",
       link: "#"
     },
     {
@@ -104,15 +104,11 @@ export default function ContactPage() {
     },
     {
       question: "Do you deliver outside the local area?",
-      answer: "Currently, we provide local delivery within a 25-mile radius. Contact us to see if we serve your area."
+      answer: "Currently, we provide local delivery within a 75-mile radius. Contact us to see if we serve your area."
     },
     {
       question: "Are your microgreens organic?",
       answer: <>Yes! All our {highlightMicrogreens('microgreens')} are naturally grown using certified organic seeds and sustainable growing practices.</>
-    },
-    {
-      question: "Can I visit your farm?",
-      answer: "Absolutely! We offer farm tours on Saturdays. Please contact us in advance to schedule your visit."
     },
     {
       question: "Do you offer bulk pricing for restaurants?",
@@ -137,9 +133,9 @@ export default function ContactPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto">
           {/* Contact Form */}
-          <div className="bg-white rounded-3xl shadow-soft p-8 md:p-12">
+          {/* <div className="bg-white rounded-3xl shadow-soft p-8 md:p-12">
             <h2 className="font-display font-bold text-3xl text-primary-800 mb-6">
               Send us a Message
             </h2>
@@ -223,12 +219,12 @@ export default function ContactPage() {
                 )}
               </button>
             </form>
-          </div>
+          </div> */}
 
           {/* Contact Information & Image */}
           <div className="space-y-8">
             {/* Contact Info Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {contactInfo.map((info, index) => (
                 <div key={info.title} className="bg-white rounded-2xl shadow-soft p-6 text-center group hover:shadow-soft-lg transition-all duration-300">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-primary-100 group-hover:bg-primary-200 rounded-xl mb-4 text-primary-600 transition-colors duration-300">
@@ -240,7 +236,7 @@ export default function ContactPage() {
                   {info.link !== "#" ? (
                     <a 
                       href={info.link}
-                      className="text-sage-600 hover:text-primary-600 transition-colors duration-200 break-words"
+                      className="text-sage-600 hover:text-primary-600 transition-colors duration-200 whitespace-nowrap"
                     >
                       {info.content}
                     </a>
@@ -264,7 +260,7 @@ export default function ContactPage() {
 
             {/* Hours & Delivery Info */}
             <div className="bg-white rounded-2xl shadow-soft p-6">
-              <h3 className="font-semibold text-lg text-primary-800 mb-4">
+              <h3 className="font-semibold text-lg text-primary-800 mb-4 text-center">
                 Business Hours & Delivery
               </h3>
               <div className="space-y-3 text-sage-700">
@@ -281,7 +277,7 @@ export default function ContactPage() {
                   <span className="font-medium">Tuesday, Thursday, Saturday</span>
                 </div>
                 <div className="pt-3 border-t border-sage-100">
-                  <p className="text-sm text-primary-700 font-medium">
+                  <p className="text-sm text-primary-700 font-medium text-center">
                     💡 Pro tip: Order by 6 PM for next-day delivery availability
                   </p>
                 </div>

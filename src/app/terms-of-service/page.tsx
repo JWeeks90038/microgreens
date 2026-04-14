@@ -112,7 +112,7 @@ export default function TermsOfService() {
           </p>
           <div className="bg-white p-6 rounded-lg shadow-sm border border-primary-200">
             <p><strong>Email:</strong> thrivinggreens.co@gmail.com</p>
-            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Phone:</strong> (760) 271-1244</p>
             <p><strong>Service Area:</strong> Southern California</p>
           </div>
         </div>
