@@ -2,6 +2,14 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { Metadata } from 'next'
+
+// SEO metadata for about page
+export const metadata: Metadata = {
+  title: "Our Growing Process & Story | Thriving Greens",
+  description: "Learn about Thriving Greens' indoor microgreens growing process in Murrieta, California. Discover our sustainable farming methods and commitment to fresh, local produce.",
+  keywords: "indoor farming, microgreens growing process, sustainable agriculture, Murrieta farm, organic microgreens, controlled environment agriculture",
+}
 
 // Enhanced function to make microgreens really stand out
 const highlightMicrogreens = (text: string) => {

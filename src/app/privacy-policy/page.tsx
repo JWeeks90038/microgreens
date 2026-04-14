@@ -1,5 +1,15 @@
 'use client'
 
+import { Metadata } from 'next'
+
+// SEO metadata for privacy policy page
+export const metadata: Metadata = {
+  title: "Privacy Policy | Thriving Greens",
+  description: "Read Thriving Greens' privacy policy to understand how we collect, use, and protect your personal information when you order microgreens.",
+  keywords: "privacy policy, data protection, personal information, microgreens delivery privacy",
+  robots: "index,follow",
+}
+
 export default function PrivacyPolicy() {
   return (
     <section className="py-20"

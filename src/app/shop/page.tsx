@@ -1,8 +1,18 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { Metadata } from 'next'
 import ProductCard from '@/components/ProductCard'
 import { Product } from '@/contexts/CartContext'
+import SEOHead from '@/components/SEOHead'
+import { generateProductSchema } from '@/utils/seo'
+
+// Generate SEO metadata for shop page
+export const metadata: Metadata = {
+  title: "Shop Fresh Microgreens | Thriving Greens",
+  description: "Browse our selection of fresh, locally grown microgreens in Murrieta, California. Order premium microgreens for delivery including pea shoots, sunflower greens, and more.",
+  keywords: "buy microgreens, fresh microgreens California, microgreens delivery, pea shoots, sunflower microgreens, broccoli microgreens",
+}
 
 // Enhanced function to make microgreens really stand out
 const highlightMicrogreens = (text: string) => {

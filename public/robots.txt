@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Block sensitive and private routes
+Disallow: /admin
+Disallow: /cart
+Disallow: /checkout
+Disallow: /api
+
+# Allow important SEO pages
+Allow: /
+Allow: /shop
+Allow: /about
+Allow: /contact
+Allow: /privacy-policy
+Allow: /terms-of-service
+
+# Sitemap location
+Sitemap: https://thrivinggreens.com/sitemap.xml
+
+# Crawl delay (optional - be nice to servers)
+Crawl-delay: 1

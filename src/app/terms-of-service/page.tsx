@@ -1,5 +1,15 @@
 'use client'
 
+import { Metadata } from 'next'
+
+// SEO metadata for terms of service page
+export const metadata: Metadata = {
+  title: "Terms of Service | Thriving Greens",
+  description: "Read Thriving Greens' terms of service for microgreens delivery, including our freshness guarantee, delivery policies, and customer guidelines.",
+  keywords: "terms of service, microgreens delivery terms, freshness guarantee, delivery policy",
+  robots: "index,follow",
+}
+
 export default function TermsOfService() {
   return (
     <section className="py-20"
