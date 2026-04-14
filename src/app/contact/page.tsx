@@ -2,14 +2,6 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { Metadata } from 'next'
-
-// SEO metadata for contact page
-export const metadata: Metadata = {
-  title: "Contact Us | Thriving Greens Microgreens Delivery",
-  description: "Contact Thriving Greens for fresh microgreens delivery in Murrieta, California. Get in touch for orders, questions, or information about our growing process.",
-  keywords: "contact microgreens farm, Murrieta California delivery, microgreens orders, fresh produce contact, local farm",
-}
 
 // Enhanced function to make microgreens really stand out
 const highlightMicrogreens = (text: string) => {

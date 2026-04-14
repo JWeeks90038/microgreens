@@ -89,7 +89,11 @@ export function generateMetadata(config: SEOConfig = {}): Metadata {
 
     // Additional meta tags
     robots: config.noIndex ? 'noindex,nofollow' : 'index,follow',
-    canonical: url,
+    
+    // Alternates for canonical URL
+    alternates: {
+      canonical: url
+    },
     
     // Verification tags (add your verification codes here when needed)
     verification: {

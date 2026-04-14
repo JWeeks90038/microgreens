@@ -1,5 +1,3 @@
-'use client'
-
 import { Metadata } from 'next'
 
 // SEO metadata for terms of service page
