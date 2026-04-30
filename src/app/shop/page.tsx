@@ -37,7 +37,8 @@ export default function ShopPage() {
     { value: 'shoots', label: 'Shoots' },
     { value: 'brassicas', label: 'Brassicas' },
     { value: 'leafy', label: 'Leafy Greens' },
-    { value: 'asian', label: 'Asian Varieties' },
+    { value: 'herbs', label: 'Fresh Herbs' },
+    { value: 'colorful', label: 'Colorful Varieties' },
   ]
 
   const sortOptions = [
