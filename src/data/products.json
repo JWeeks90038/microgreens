@@ -34,7 +34,7 @@
     "flavorProfile": "Very spicy, peppery, intense",
     "nutritionalBenefits": "High in vitamin C, antioxidants, and natural enzymes",
     "bestUses": ["Salads", "Tacos", "Meat dishes", "Sandwiches", "Cocktail garnish"],
-    "image": "/images/rambo-radish.png",
+    "image": "/images/rambo-radish1.png",
     "featured": true,
     "category": "brassicas"
   },
@@ -112,7 +112,7 @@
     "flavorProfile": "Peppery, mineral, slightly bitter",
     "nutritionalBenefits": "Very high in vitamin K, calcium, iron, and nitrates",
     "bestUses": ["Salads", "Sandwiches", "Soup garnish", "Fine dining", "Health blends"],
-    "image": "/images/watercress.png",
+    "image": "/images/watercress1.png",
     "featured": false,
     "category": "leafy"
   }
