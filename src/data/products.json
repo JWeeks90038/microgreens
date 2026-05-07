@@ -79,7 +79,7 @@
     "flavorProfile": "Peppery, mineral-rich, crisp",
     "nutritionalBenefits": "Very high in vitamin K with calcium, iron, and antioxidant compounds",
     "bestUses": ["Salads", "Sandwiches", "Soups", "Seafood plates", "Fine dining garnish"],
-    "image": "/images/watercress1.png",
+    "image": "/watercress.png",
     "featured": true,
     "category": "leafy"
   },
@@ -100,7 +100,7 @@
     "flavorProfile": "Spicy, peppery, crisp",
     "nutritionalBenefits": "High in vitamin C, antioxidants, and natural enzymes",
     "bestUses": ["Tacos", "Burgers", "Salads", "Sandwiches", "Protein bowls"],
-    "image": "/images/rambo-radish1.png",
+    "image": "/images/rambo-radish.png",
     "featured": true,
     "category": "brassicas"
   },
@@ -121,7 +121,7 @@
     "flavorProfile": "Mild, fresh, lightly earthy",
     "nutritionalBenefits": "Valued for sulforaphane precursors, vitamin C, and antioxidant support",
     "bestUses": ["Smoothies", "Wraps", "Salads", "Sandwiches", "Daily wellness meals"],
-    "image": "/images/kale-lacinato.png",
+    "image": "/broccoli.png",
     "featured": false,
     "category": "brassicas"
   },
@@ -163,7 +163,7 @@
     "flavorProfile": "Balanced, fresh, lightly peppery",
     "nutritionalBenefits": "Diverse mix of vitamins, minerals, antioxidants, and phytonutrients",
     "bestUses": ["Mixed salads", "Garnish", "Wraps", "Bowls", "Catering trays"],
-    "image": "/images/Amaranth.png",
+    "image": "/rainbow_mix.png",
     "featured": true,
     "category": "colorful"
   },
@@ -205,8 +205,29 @@
     "flavorProfile": "Fresh, grassy, concentrated",
     "nutritionalBenefits": "Chlorophyll-rich with vitamins, minerals, and antioxidant compounds",
     "bestUses": ["Juice shots", "Smoothies", "Green blends", "Wellness routines", "Fresh pressing"],
-    "image": "/images/pea-speckled.png",
+    "image": "/wheatgrass.png",
     "featured": false,
     "category": "shoots"
+  },
+  {
+    "id": 11,
+    "name": "Italian Basil Microgreens",
+    "price": 3.75,
+    "weightOptions": [
+      { "weightOz": 1, "price": 3.75 },
+      { "weightOz": 4, "price": 14.25 },
+      { "weightOz": 8, "price": 27.0 },
+      { "weightOz": 12, "price": 38.0 },
+      { "weightOz": 16, "price": 48.5 },
+      { "weightOz": 24, "price": 69.0 }
+    ],
+    "shortDescription": "Sweet, aromatic basil microgreens for pasta, pizza, sandwiches, and bright fresh finishes.",
+    "description": "Italian Basil microgreens bring the familiar sweet and aromatic basil character in a tender, delicate form that works beautifully as a finishing green. They pair especially well with tomatoes, pasta, pizza, sandwiches, and Mediterranean dishes where fresh basil flavor matters.",
+    "flavorProfile": "Sweet, aromatic, classic basil",
+    "nutritionalBenefits": "Rich in vitamins A, C, and K with antioxidant and anti-inflammatory compounds",
+    "bestUses": ["Pasta", "Pizza", "Caprese", "Sandwiches", "Mediterranean dishes"],
+    "image": "/italian-basil.png",
+    "featured": false,
+    "category": "herbs"
   }
 ]

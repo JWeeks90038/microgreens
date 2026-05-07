@@ -123,7 +123,7 @@ export function generateLocalBusinessSchema() {
     "name": businessInfo.name,
     "description": "Indoor microgreens farm specializing in fresh, locally grown microgreens in Murrieta, California.",
     "url": defaultSEO.siteUrl,
-    "logo": `${defaultSEO.siteUrl}/tglogo-new.png`,
+    "logo": `${defaultSEO.siteUrl}/tglogo-new2.png`,
     "image": `${defaultSEO.siteUrl}/og-image.jpg`,
     "email": businessInfo.email,
     "telephone": businessInfo.phone,

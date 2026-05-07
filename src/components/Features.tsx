@@ -28,7 +28,7 @@ export default function Features() {
         </svg>
       ),
       title: "Freshly Harvested",
-      description: "Cut to order within 24 hours of delivery. Experience microgreens at their peak flavor and nutritional value."
+      description: "Microgreens harvested at peak freshness for exceptional flavor and nutritional value in every order."
     },
     {
       icon: (
@@ -47,7 +47,7 @@ export default function Features() {
         </svg>
       ),
       title: "Locally Grown",
-      description: "Cultivated in our local urban farm using sustainable practices. Supporting your community and reducing food miles."
+      description: "Cultivated in our local urban farm with sustainable, naturally minded growing practices for fresher, better-tasting microgreens."
     },
     {
       icon: (

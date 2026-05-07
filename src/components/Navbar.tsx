@@ -29,7 +29,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <Image
-              src="/tglogo-new.png"
+              src="/tglogo-new2.png"
               alt="Thriving Greens Logo"
               width={40}
               height={40}
@@ -42,7 +42,7 @@ export default function Navbar() {
                     fontSize: '9px',
                     lineHeight: '1'
                   }}>
-              Eat small. Live strong. Thrive daily
+              LIVE GREEN. EAT WELL. THRIVE DAILY.
             </span>
           </Link>
 

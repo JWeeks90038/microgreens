@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 
 // Enhanced function to make microgreens really stand out
@@ -32,11 +33,15 @@ export default function Hero() {
       </div>
 
       {/* Title Above Video */}
-      <div className="relative text-center pt-6 pb-4">
-        <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-tight"
-            style={{ color: 'rgb(var(--color-primary-800))' }}>
-          Thriving <span style={{ color: 'rgb(var(--color-primary-600))' }}>Greens</span>
-        </h1>
+      <div className="relative text-center pt-2 pb-1">
+        <Image
+          src="/tglogo-new3.png"
+          alt="Thriving Greens"
+          width={360}
+          height={125}
+          className="mx-auto h-auto w-full max-w-[220px] md:max-w-[280px] lg:max-w-[360px]"
+          priority
+        />
       </div>
 
       {/* Full Width Video */}

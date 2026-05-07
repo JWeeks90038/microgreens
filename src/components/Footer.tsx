@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-3 lg:col-span-1">
             <div className="flex items-center justify-center space-x-3 mb-4">
               <Image
-                src="/tglogo-new.png"
+                src="/tglogo-new2.png"
                 alt="Thriving Greens Logo"
                 width={32}
                 height={32}
