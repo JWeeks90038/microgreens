@@ -61,8 +61,8 @@ export default function ContactPage() {
         </svg>
       ),
       title: "Email",
-      content: "thrivinggreens.co@gmail.com",
-      link: "mailto:thrivinggreens.co@gmail.com"
+      content: "team@thrivinggreens.com",
+      link: "mailto:team@thrivinggreens.com"
     },
     {
       icon: (
@@ -71,7 +71,7 @@ export default function ContactPage() {
         </svg>
       ),
       title: "Phone",
-      content: "(555) 123-4567",
+      content: "(760) 271-1244",
       link: "tel:+15551234567"
     },
     {

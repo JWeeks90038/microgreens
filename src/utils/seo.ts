@@ -35,7 +35,7 @@ export const businessInfo = {
   location: "Murrieta, California, USA",
   instagram: "https://www.instagram.com/thrivinggreens.co/?hl=en",
   facebook: "https://www.facebook.com/profile.php?id=61570673604333",
-  phone: "(555) 123-4567"
+  phone: "(760) 271-1244"
 }
 
 export function generateMetadata(config: SEOConfig = {}): Metadata {
