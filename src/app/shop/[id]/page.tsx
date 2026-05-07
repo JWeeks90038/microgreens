@@ -16,6 +16,7 @@ export default function ProductDetailPage() {
   const [relatedProducts, setRelatedProducts] = useState<Product[]>([])
   const [loading, setLoading] = useState(true)
   const [quantity, setQuantity] = useState(1)
+  const [selectedWeightOz, setSelectedWeightOz] = useState<number | null>(null)
 
   useEffect(() => {
     const loadProduct = async () => {
@@ -28,6 +29,7 @@ export default function ProductDetailPage() {
           
           if (foundProduct) {
             setProduct(foundProduct)
+            setSelectedWeightOz(foundProduct.weightOptions[0]?.weightOz ?? 1)
             
             // Find related products (same category, excluding current product)
             const related = products
@@ -54,8 +56,9 @@ export default function ProductDetailPage() {
 
   const handleAddToCart = () => {
     if (product) {
+      const weightToAdd = selectedWeightOz ?? product.weightOptions[0]?.weightOz ?? 1
       for (let i = 0; i < quantity; i++) {
-        addItem(product)
+        addItem(product, weightToAdd)
       }
     }
   }
@@ -88,6 +91,10 @@ export default function ProductDetailPage() {
   if (!product) {
     return null
   }
+
+  const selectedWeightOption = product.weightOptions.find(
+    (option) => option.weightOz === selectedWeightOz
+  ) ?? product.weightOptions[0]
 
   return (
     <div className="min-h-screen bg-cream-50">
@@ -134,7 +141,10 @@ export default function ProductDetailPage() {
                 {product.name}
               </h1>
               <p className="text-2xl font-bold text-primary-600">
-                ${product.price.toFixed(2)}
+                ${selectedWeightOption.price.toFixed(2)}
+              </p>
+              <p className="text-sm text-sage-600 mt-1">
+                From ${product.price.toFixed(2)} • selected size: {selectedWeightOption.weightOz} oz
               </p>
               <span className="inline-block mt-2 bg-sage-100 text-sage-700 text-sm px-3 py-1 rounded-full font-medium capitalize">
                 {product.category}
@@ -174,6 +184,38 @@ export default function ProductDetailPage() {
 
             {/* Quantity and Add to Cart */}
             <div className="bg-white p-6 rounded-2xl shadow-soft">
+              <div className="mb-5">
+                <label className="block font-semibold text-primary-800 mb-3">
+                  Weight
+                </label>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {product.weightOptions.map((option) => {
+                    const isSelected = option.weightOz === selectedWeightOption.weightOz
+
+                    return (
+                      <button
+                        key={option.weightOz}
+                        type="button"
+                        onClick={() => setSelectedWeightOz(option.weightOz)}
+                        className="rounded-2xl border px-4 py-3 text-left transition-colors duration-200"
+                        style={{
+                          borderColor: isSelected
+                            ? 'rgb(var(--color-primary-500))'
+                            : 'rgba(var(--color-sage-200), 1)',
+                          backgroundColor: isSelected
+                            ? 'rgba(var(--color-primary-100), 0.35)'
+                            : 'white',
+                          color: 'rgb(var(--color-primary-800))'
+                        }}
+                      >
+                        <span className="block font-semibold">{option.weightOz} oz</span>
+                        <span className="block text-sm text-sage-600">${option.price.toFixed(2)}</span>
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
+
               <div className="flex items-center space-x-4 mb-4">
                 <label htmlFor="quantity" className="font-semibold text-primary-800">
                   Quantity:
@@ -202,7 +244,7 @@ export default function ProductDetailPage() {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m0 0h6m0 0l2.5-5" />
                 </svg>
-                <span>Add {quantity > 1 ? `${quantity} ` : ''}to Cart</span>
+                <span>Add {quantity > 1 ? `${quantity} ` : ''}{selectedWeightOption.weightOz} oz to Cart</span>
               </button>
 
               <div className="mt-4 text-center">

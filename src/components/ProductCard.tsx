@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import { Product } from '@/contexts/CartContext'
 import { useCart } from '@/contexts/CartContext'
 
@@ -30,11 +31,14 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const { addItem } = useCart()
+  const defaultWeightOption = product.weightOptions[0]
+  const [selectedWeightOz, setSelectedWeightOz] = useState<number>(defaultWeightOption?.weightOz ?? 1)
+  const selectedWeightOption = product.weightOptions.find((option) => option.weightOz === selectedWeightOz) ?? defaultWeightOption
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault()
     e.stopPropagation()
-    addItem(product)
+    addItem(product, selectedWeightOz)
   }
 
   return (
@@ -81,9 +85,16 @@ export default function ProductCard({ product }: ProductCardProps) {
               className="font-bold text-lg"
               style={{ color: 'rgb(var(--color-primary-600))' }}
             >
-              ${product.price.toFixed(2)}
+              ${selectedWeightOption.price.toFixed(2)}
             </span>
           </div>
+
+          <p
+            className="text-xs font-medium mb-3"
+            style={{ color: 'rgb(var(--color-sage-600))' }}
+          >
+            From ${product.price.toFixed(2)} • choose a size
+          </p>
           
           <p 
             className="text-sm mb-4 line-clamp-2"
@@ -91,6 +102,40 @@ export default function ProductCard({ product }: ProductCardProps) {
           >
             {highlightMicrogreens(product.shortDescription)}
           </p>
+
+          <div className="mb-4">
+            <label
+              htmlFor={`weight-${product.id}`}
+              className="block text-xs font-medium mb-2"
+              style={{ color: 'rgb(var(--color-primary-800))' }}
+            >
+              Weight
+            </label>
+            <select
+              id={`weight-${product.id}`}
+              value={selectedWeightOz}
+              onChange={(e) => {
+                e.preventDefault()
+                e.stopPropagation()
+                setSelectedWeightOz(Number(e.target.value))
+              }}
+              onClick={(e) => {
+                e.preventDefault()
+                e.stopPropagation()
+              }}
+              className="w-full rounded-xl border px-3 py-2 text-sm bg-white"
+              style={{
+                borderColor: 'rgba(var(--color-sage-200), 1)',
+                color: 'rgb(var(--color-primary-800))'
+              }}
+            >
+              {product.weightOptions.map((option) => (
+                <option key={option.weightOz} value={option.weightOz}>
+                  {option.weightOz} oz - ${option.price.toFixed(2)}
+                </option>
+              ))}
+            </select>
+          </div>
 
           <div className="flex justify-between items-center">
             <span 

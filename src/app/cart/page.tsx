@@ -87,7 +87,7 @@ export default function CartPage() {
           {/* Cart Items */}
           <div className="lg:col-span-2 space-y-4">
             {state.items.map((item) => (
-              <div key={item.product.id} className="bg-white rounded-2xl shadow-soft p-6">
+              <div key={`${item.product.id}-${item.selectedWeightOz}`} className="bg-white rounded-2xl shadow-soft p-6">
                 <div className="flex flex-col sm:flex-row gap-4">
                   {/* Product Image */}
                   <div className="relative w-full sm:w-24 h-24 bg-cream-100 rounded-xl overflow-hidden flex-shrink-0">
@@ -112,7 +112,7 @@ export default function CartPage() {
                       {item.product.shortDescription}
                     </p>
                     <p className="font-semibold text-primary-600 mt-2">
-                      ${item.product.price.toFixed(2)} each
+                      {item.selectedWeightOz} oz • ${item.unitPrice.toFixed(2)} each
                     </p>
                   </div>
 
@@ -120,7 +120,7 @@ export default function CartPage() {
                   <div className="flex items-center space-x-3">
                     <div className="flex items-center border border-sage-200 rounded-lg">
                       <button
-                        onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
+                        onClick={() => updateQuantity(item.product.id, item.selectedWeightOz, item.quantity - 1)}
                         className="px-3 py-2 text-sage-600 hover:text-primary-600 transition-colors duration-200"
                         aria-label="Decrease quantity"
                       >
@@ -130,7 +130,7 @@ export default function CartPage() {
                         {item.quantity}
                       </span>
                       <button
-                        onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
+                        onClick={() => updateQuantity(item.product.id, item.selectedWeightOz, item.quantity + 1)}
                         className="px-3 py-2 text-sage-600 hover:text-primary-600 transition-colors duration-200"
                         aria-label="Increase quantity"
                       >
@@ -140,7 +140,7 @@ export default function CartPage() {
 
                     {/* Remove Button */}
                     <button
-                      onClick={() => removeItem(item.product.id)}
+                      onClick={() => removeItem(item.product.id, item.selectedWeightOz)}
                       className="text-red-500 hover:text-red-600 transition-colors duration-200 p-2"
                       aria-label="Remove item"
                     >
@@ -155,7 +155,7 @@ export default function CartPage() {
                 <div className="flex justify-between items-center mt-4 pt-4 border-t border-sage-100">
                   <span className="text-sage-600">Subtotal:</span>
                   <span className="font-semibold text-lg text-primary-800">
-                    ${(item.product.price * item.quantity).toFixed(2)}
+                    ${(item.unitPrice * item.quantity).toFixed(2)}
                   </span>
                 </div>
               </div>
