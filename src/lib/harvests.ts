@@ -112,7 +112,7 @@ function normalizeHarvestBatchRecord(data: DocumentData): HarvestPassportRecord 
     lotId,
     productName: formatText(data.cropName),
     weight: formatBatchWeight(data),
-    harvestDate: formatHarvestDate(data.harvestDate),
+    harvestDate: formatHarvestDate(data.activatedAt ?? data.harvestDate),
     storageInstructions: DEFAULT_STORAGE_INSTRUCTIONS,
     shelfLife: DEFAULT_SHELF_LIFE,
     status: formatText(data.status),
