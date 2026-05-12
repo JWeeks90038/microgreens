@@ -5,6 +5,7 @@ import { CartProvider } from "@/contexts/CartContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import FirebaseAnalytics from "@/components/FirebaseAnalytics";
 import { generateMetadata, generateLocalBusinessSchema } from "@/utils/seo";
 
 const inter = Inter({
@@ -36,6 +37,7 @@ export default function RootLayout({
         <SEOHead structuredData={[localBusinessSchema]} />
       </head>
       <body className="min-h-full flex flex-col font-sans bg-sage-100 text-sage-900">
+        <FirebaseAnalytics />
         <CartProvider>
           <Navbar />
           <main className="flex-1">
