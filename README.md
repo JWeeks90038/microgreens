@@ -46,7 +46,19 @@ A modern, responsive e-commerce website for **Thriving Greens**, a premium micro
    pnpm install
    ```
 
-3. **Start the development server**
+3. **Configure environment variables**
+   Create a local `.env.local` file from `.env.example` and set:
+   ```bash
+   NEXT_PUBLIC_FIREBASE_API_KEY=...
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=...
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=...
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=...
+   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=...
+   NEXT_PUBLIC_FIREBASE_APP_ID=...
+   NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=...
+   ```
+
+4. **Start the development server**
    ```bash
    npm run dev
    # or
@@ -55,7 +67,7 @@ A modern, responsive e-commerce website for **Thriving Greens**, a premium micro
    pnpm dev
    ```
 
-4. **Open your browser**
+5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ### Build for Production
